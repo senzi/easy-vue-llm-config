@@ -1,0 +1,56 @@
+providers:
+  openai:
+    base_url: "https://api.openai.com/v1/chat/completions"
+    models:
+      - "gpt-3.5-turbo"
+      - "gpt-4"
+    default_model: "gpt-3.5-turbo"
+    global_default:
+      max_tokens: 2000
+      temperature: 0.7
+  
+  anthropic:
+    base_url: "https://api.anthropic.com/v1/chat/completions"
+    models:
+      - "claude-2"
+      - "claude-instant"
+    default_model: "claude-2"
+    global_default:
+      max_tokens: 1000
+      temperature: 0.7
+  
+  gemini:
+    base_url: "https://generativelanguage.googleapis.com/v1/chat/completions"
+    models:
+      - "gemini-pro"
+    default_model: "gemini-pro"
+    global_default:
+      max_tokens: 2000
+      temperature: 0.7
+
+  moonshot:
+    base_url: "https://api.moonshot.cn/v1/chat/completions"
+    models:
+      - "moonshot-v1-8k"
+    default_model: "moonshot-v1-8k"
+    global_default:
+      max_tokens: 2000
+      temperature: 0.7
+
+  deepseek:
+    base_url: "https://api.deepseek.com/v1/chat/completions"
+    models:
+      - "deepseek-chat"
+    default_model: "deepseek-chat"
+    global_default:
+      max_tokens: 2000
+      temperature: 0.7
+
+  linkai:
+    base_url: "https://api.link-ai.tech/v1/chat/completions"
+    models:
+      - "LinkAI-4o-mini"
+    default_model: "LinkAI-4o-mini"
+    global_default:
+      max_tokens: 2000
+      temperature: 0.7
