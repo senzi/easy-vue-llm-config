@@ -9,7 +9,7 @@ class LLMService {
 
   async loadProviderConfigs() {
     try {
-      const response = await fetch('/src/config/llm-providers.yaml')
+      const response = await fetch('/config/llm-providers.yaml')
       const yamlText = await response.text()
       this.providerConfigs = yaml.load(yamlText)
     } catch (error) {
